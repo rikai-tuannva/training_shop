@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :password
       t.string :name
       t.integer :status
-      t.string :email
+      t.string :email, default: ""
       t.numeric :phone
       t.string :address
 
