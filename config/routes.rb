@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users
   resources :roles
   resources :categories
+  resources :products
 
   as :user do
     get "signin" => "devise/sessions#new"

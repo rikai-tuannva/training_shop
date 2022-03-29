@@ -1,2 +1,2 @@
-class Rate < ApplicationRecord
+class Rate < ActiveRecord::Base
 end

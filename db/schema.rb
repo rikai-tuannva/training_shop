@@ -70,8 +70,8 @@ ActiveRecord::Schema.define(version: 2022_03_21_074213) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.integer "name"
-    t.integer "code"
+    t.string "name"
+    t.string "code"
     t.integer "price"
     t.integer "status"
     t.datetime "created_at", precision: 6, null: false
@@ -102,7 +102,7 @@ ActiveRecord::Schema.define(version: 2022_03_21_074213) do
     t.string "password"
     t.string "name"
     t.integer "status"
-    t.string "email"
+    t.string "email", default: ""
     t.decimal "phone"
     t.string "address"
     t.datetime "created_at", precision: 6, null: false

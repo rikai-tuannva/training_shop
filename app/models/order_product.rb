@@ -1,2 +1,2 @@
-class OrderProduct < ApplicationRecord
+class OrderProduct < ActiveRecord::Base
 end
